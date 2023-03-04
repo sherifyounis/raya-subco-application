@@ -81,6 +81,18 @@ public class CacheConfiguration {
             createCache(cm, com.raya.subco.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.raya.subco.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.raya.subco.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Region.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Country.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Location.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Department.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Task.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Employee.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Job.class.getName(), jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            createCache(cm, com.raya.subco.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
